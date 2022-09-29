@@ -16,9 +16,20 @@ public abstract class Animal {
         return age;
     }
 
+    public Animal(String nickname) {
+        if (nickname != null && !nickname.isBlank() && !nickname.isEmpty()) {
+            this.nickname = nickname;
+        }
+        this.age = 0;
+    }
+
     public Animal(String nickname, int age) {
-        this.nickname = nickname;
-        this.age = age;
+        if (nickname != null && !nickname.isBlank() && !nickname.isEmpty()) {
+            this.nickname = nickname;
+        }
+        if (age > 0) {
+            this.age = age;
+        }
     }
 
     protected abstract void eat();
@@ -27,4 +38,8 @@ public abstract class Animal {
 
     protected abstract void go();
 
+    @Override
+    public String toString() {
+        return nickname + ", возраст - " + age;
+    }
 }

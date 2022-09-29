@@ -3,7 +3,7 @@ package Animals.Mammals;
 import Animals.Mammals.Mammal;
 
 public class Herbivore extends Mammal {
-    private final String mealType = "растительная пища";
+    private String mealType = "растительная пища";
 
     public String getMealType() {
         return mealType;
@@ -21,29 +21,41 @@ public class Herbivore extends Mammal {
         super(nickname, age, environment, speed);
     }
 
+    public Herbivore(String nickname, int age, String environment, int speed, String mealType) {
+        super(nickname, age, environment, speed);
+        if (mealType != null && !mealType.isBlank() && !mealType.isEmpty()) {
+            this.mealType = mealType;
+        }
+    }
+
     @Override
     protected void sleep() {
         System.out.println("Я травоядное - " + getNickname() + ", я сплю ночью!");
     }
 
     @Override
-    protected void eat() {
+    public void eat() {
         System.out.println("ем. Мой рацион - " + mealType);
     }
 
     @Override
-    protected void go() {
+    public void go() {
         walk();
     }
 
     @Override
-    protected void walk() {
+    public void walk() {
         graze();
     }
 
-    protected void graze() {
+    public void graze() {
         System.out.println("Я, " + getNickname() + ", пасуcь и ");
         eat();
     }
 
+    @Override
+    public String toString() {
+        return "Травоядное животное - " + super.toString() +
+                ", тип пищи " + mealType;
+    }
 }
