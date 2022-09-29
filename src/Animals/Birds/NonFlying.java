@@ -1,6 +1,4 @@
-package Birds;
-
-import org.w3c.dom.ls.LSOutput;
+package Animals.Birds;
 
 public class NonFlying extends Bird{
     private String movementType = "не летаю!";

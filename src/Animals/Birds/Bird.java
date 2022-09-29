@@ -1,8 +1,6 @@
-package Birds;
+package Animals.Birds;
 
 import Animals.Animal;
-
-import java.security.GeneralSecurityException;
 
 public abstract class Bird extends Animal {
     private String environment = "земля - воздух";

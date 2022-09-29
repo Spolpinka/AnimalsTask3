@@ -2,8 +2,8 @@ import Animals.Amphibian;
 import Animals.Animal;
 import Animals.Mammals.Herbivore;
 import Animals.Mammals.Predator;
-import Birds.Flying;
-import Birds.NonFlying;
+import Animals.Birds.Flying;
+import Animals.Birds.NonFlying;
 
 public class Main {
     public static void main(String[] args) {
