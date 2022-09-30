@@ -41,7 +41,7 @@ public class Flying extends Bird{
 
     public void fly() {
         System.out.println("Лечу, потому что я - " + getNickname() + " и " + movementType);
-    }
+    }//пришлось корябать 2 поля
 
     @Override
     public String toString() {

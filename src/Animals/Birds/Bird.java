@@ -21,7 +21,7 @@ public abstract class Bird extends Animal {
     }
 
     @Override
-    protected abstract void eat();
+    protected abstract void eat();//хотелось еще сделать логику на птенца, но не стал
 
     @Override
     protected abstract void sleep();

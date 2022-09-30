@@ -36,7 +36,7 @@ public class Predator extends Mammal {
 
     public void haunt() {
         System.out.println("Я - хищник, " + getNickname() + ", мой рацион - " + mealType);
-    }
+    }//вообще хищник вполне может не только охотиться и спариваться, но логика программы это не предусматривает
 
     @Override
     public String toString() {

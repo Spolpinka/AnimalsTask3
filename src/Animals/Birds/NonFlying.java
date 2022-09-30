@@ -36,7 +36,7 @@ public class NonFlying extends Bird{
 
     public void walk() {
         hunt();
-    }
+    }//каскадная ссыль
 
     @Override
     public void hunt() {
