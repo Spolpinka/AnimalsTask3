@@ -30,7 +30,7 @@ public abstract class Mammal extends Animal {
     protected abstract void walk();
 
     @Override
-    protected abstract void sleep();
+    protected abstract void sleep();//интересно зачем?
 
     @Override
     protected abstract void go();
