@@ -16,8 +16,12 @@ public abstract class Mammal extends Animal {
 
     public Mammal(String nickname, int age, String environment, int speed) {
         super(nickname, age);
-        this.environment = environment;
-        this.speed = speed;
+        if (environment != null && !environment.isEmpty() && !environment.isBlank()) {
+            this.environment = environment;
+        }
+        if (speed > 0) {
+            this.speed = speed;
+        }
     }
 
     @Override
@@ -30,4 +34,11 @@ public abstract class Mammal extends Animal {
 
     @Override
     protected abstract void go();
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", среда обитания - " + environment +
+                ", максимальная скорость - " + speed;
+    }
 }
