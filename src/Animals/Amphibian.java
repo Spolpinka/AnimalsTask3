@@ -52,6 +52,7 @@ public class Amphibian extends Animal {
     public String toString() {
         return "Амфибия - " + super.toString() +
                 ", среда обитания - " + environment +
-                ", тип пищи - " + mealType;
+                ", тип пищи - " + mealType +
+                " а еще я двоякодышащее, если кто еще может вспомнить курс биологии";
     }
 }

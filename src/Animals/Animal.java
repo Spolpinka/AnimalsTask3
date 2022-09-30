@@ -34,7 +34,7 @@ public abstract class Animal {
 
     protected abstract void eat();
 
-    protected abstract void sleep();
+    protected abstract void sleep();//переопределен не везде?
 
     protected abstract void go();
 

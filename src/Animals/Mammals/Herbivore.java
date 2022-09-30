@@ -46,7 +46,7 @@ public class Herbivore extends Mammal {
     @Override
     public void walk() {
         graze();
-    }
+    }//ну не гуляют травоядные, это только у человека высшая нервная деятельность позволяет отвлеченно прогуливаться, без цели
 
     public void graze() {
         System.out.println("Я, " + getNickname() + ", пасуcь и ");
